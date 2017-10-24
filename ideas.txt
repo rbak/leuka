@@ -1,0 +1,48 @@
+ Fixes
+ - Better search heuristics
+ - Thread safety
+ - Handle shutdown in all threads
+
+
+ Shortterm Goals
+ - Output types (Include web)
+ - Input types (Include icinga and monasca)
+
+
+ Longterm Goals
+ - Logging
+ - Distributed/multinode
+ - Actions and action level
+ - Add threading to checks (multiple at once)
+ - Neighbor support for checks
+
+
+
+
+
+ For now
+  - Add web output (Allow for multiple outputs)
+  - Improve incident handling
+  - Improve heuristics
+  - Fully configure
+  - Add icinga input monitor
+  - daemonize
+
+Output information
+ - Summary vs Full information
+ - Notify
+   - Failed checks
+   - Run checks
+   - Discovered information (logs)
+   - Triggers
+   - Probable cause
+   - Recommended actions
+     - safety of actions
+   - Incident Open/Closed
+ - Poll
+   - Explored Nodes
+   - Failing nodes (Allow output to poll?)
+   - Total nodes
+   - Overall confidence?
+   - Overall suspicion?
+

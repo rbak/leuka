@@ -1,0 +1,41 @@
+tenant:
+  Checks:
+    check_security_rules:
+      cost: 10
+      confidence: 100
+      states:
+        network_blocked: 'high'
+  States:
+    network_blocked:
+      - 'fixsecurityrules'
+  Fixes:
+    fixsecurityrules: {}
+router: {}
+instance:
+  Checks:
+    attempt_ssh:
+      cost: 10
+      confidence: 50
+      states:
+        network_blocked: 'med'
+  States:
+    network_blocked:
+      - 'migrate_instance'
+  Fixes:
+    migrate_instance: {}
+network: {}
+subnet: {}
+securitygroup: {}
+floatingip: {}
+agent:
+  Checks:
+    l3_agent_status:
+      cost: 10
+      confidence: 50
+      states:
+        down: 'high'
+  States:
+    down:
+      - 'restartl3agent'
+  Fixes:
+    restartl3agent: {}

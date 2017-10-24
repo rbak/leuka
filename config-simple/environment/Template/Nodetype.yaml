@@ -1,0 +1,12 @@
+keystone:
+  Children:
+    Process:
+      - 'keystone'
+control:
+  Children:
+    Process:
+      - 'nova-api'
+compute:
+  Children:
+    Process:
+      - 'nova-compute'

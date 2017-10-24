@@ -1,0 +1,12 @@
+Region,250,100,100
+Node,200,100,100
+Service,150,50,50
+Process,100,50,50
+Tenant,100,200,0
+Instance,50,250,50
+Network,0,0,250
+Subnet,100,100,250
+Router,200,200,250
+Floatingip,50,200,250
+L3Agent,200,50,250
+Securitygroup,0,100,250

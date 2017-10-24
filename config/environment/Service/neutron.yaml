@@ -1,0 +1,5 @@
+Tie:
+  level: 'Region'
+  Process:
+    - 'neutron-plugin-openvswitch-agent'
+    - 'openvswitch-switch'

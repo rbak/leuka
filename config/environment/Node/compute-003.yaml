@@ -1,0 +1,7 @@
+Template:
+  Nodetype:
+    - 'compute'
+Children:
+  Server:
+    - 'base'
+

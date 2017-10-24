@@ -1,0 +1,18 @@
+Check:
+  check_log:
+    weight: 10
+    hostname: keystone-001
+  process_check:
+    weight: 160
+    args:
+      service: keystone
+      hostname: keystone-001
+Action:
+  restart_service:
+    args:
+      service: keystone
+      hostname: keystone-001
+Tie:
+  level: 'Node'
+  Server:
+    - 'base'

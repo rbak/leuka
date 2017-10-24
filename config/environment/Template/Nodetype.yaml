@@ -1,0 +1,26 @@
+keystone:
+  Children:
+    Process:
+      - 'apache2'
+      - 'keystone'
+      - 'monasca-agent'
+      - 'mysql'
+control:
+  Children:
+    Process:
+      - 'cinder-api'
+      - 'designate-api'
+      - 'glance-api'
+      - 'heat-api'
+      - 'heat-engine'
+      - 'monasca-agent'
+      - 'neutron-plugin-openvswitch-agent'
+      - 'nova-api'
+      - 'openvswitch-switch'
+      - 'rabbitmq-server'
+compute:
+  Children:
+    Process:
+      - 'ceph'
+      - 'monasca-agent'
+      - 'nova-compute'

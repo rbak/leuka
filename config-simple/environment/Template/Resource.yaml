@@ -1,0 +1,8 @@
+router:
+  Source: True
+  Checks:
+      check1:
+        cost: 10
+        confidence: 50
+        states:
+          hung: 'med'

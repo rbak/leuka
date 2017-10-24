@@ -1,0 +1,16 @@
+Tenants:
+  time: 600
+Instances:
+  time: 30
+Networks:
+  time: 30
+Subnets:
+  time: 30
+Routers:
+  time: 30
+Agents:
+  time: 600
+# Securitygroups:
+#   time: 600
+Floatingips:
+  time: 30

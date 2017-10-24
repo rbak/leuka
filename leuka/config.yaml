@@ -1,0 +1,28 @@
+Main:
+  # hostname: 'localhost'
+  # peers: []
+  # action_level: 0
+  config_dir: 'leuka/config'
+  incident_window: 5
+  inputs:
+    - restapi
+  outputs:
+    - web
+
+Logging:
+  log_level: 'WARNING'
+  log_file: '/dev/null'
+
+Args:
+  username: ''
+  password: ''
+  tenant: ''
+  auth_url: ''
+  region: ''
+
+  ssh_key: ''
+
+Weights:
+  low: 20
+  med: 50
+  high: 80

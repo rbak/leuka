@@ -1,0 +1,38 @@
+Check:
+  # example:
+  #   order:
+  #   cost:
+  #   args:
+  #   states:
+  #     state:
+  process_check:
+    states:
+      down: 'high'
+  ping:
+    states:
+      hung: 'med'
+      down: 'med'
+  call:
+    cost: 1
+    states:
+      hung: 'med'
+      down: 'med'
+  check_log:
+    args:
+      path: '/var/log/nova/nova-api.log'
+    cost: -1
+    weight: 'low'
+State:
+  down:
+    - 'restart_service'
+  hung:
+    - 'restart_service'
+Action:
+  restart_service:
+    args:
+      service: nova-api
+      hostname: control-001
+Tie:
+  level: 'Node'
+  Server:
+    - 'base'

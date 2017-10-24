@@ -1,0 +1,4 @@
+Tie:
+  level: 'Region'
+  Process:
+    - 'glance-api'

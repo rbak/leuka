@@ -1,0 +1,5 @@
+Tie:
+  level: 'Region'
+  Process:
+    - 'cinder-api'
+    - 'ceph'

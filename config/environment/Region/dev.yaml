@@ -1,0 +1,24 @@
+Source: True
+Children:
+  Node:
+    - 'control-001'
+    - 'control-002'
+    - 'control-003'
+    - 'compute-001'
+    - 'compute-002'
+    - 'compute-003'
+    - 'keystone-001'
+    - 'keystone-002'
+    - 'keystone-003'
+  Service:
+    - 'keystone'
+    - 'nova'
+    - 'neutron'
+    - 'cinder'
+    - 'designate'
+    - 'glance'
+    - 'heat'
+    - 'monasca'
+    - 'horizon'
+    - 'rabbit'
+    - 'mysql'

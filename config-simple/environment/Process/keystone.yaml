@@ -1,0 +1,26 @@
+Checks:
+  check1:
+    cost: 10
+    confidence: 50
+    states:
+      hung: 'med'
+  check2:
+    cost: 160
+    confidence: 50
+    states:
+      hung: 'med'
+      down: 'low'
+  check3:
+    cost: 20
+    confidence: 50
+    states:
+      down: 'high'
+States:
+  down:
+    - 'action'
+  hung:
+    - 'action'
+Fixes:
+  action:
+    args:
+      service: keystone
